@@ -1,3 +1,26 @@
 *.db
 claude_desktop_config.json
 whatsapp.log
+
+# Compiled Go binary — rebuild from source, never commit binaries
+whatsapp-bridge/whatsapp-bridge
+
+# WhatsApp session store — contains auth credentials beyond .db files
+whatsapp-bridge/store/
+
+# Environment secrets
+.env
+.env.local
+*.env
+credentials.json
+token.json
+*.pem
+*.key
+
+# Claude Code local artifacts
+**/.claude/settings.local.json
+**/.claude.backup/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
